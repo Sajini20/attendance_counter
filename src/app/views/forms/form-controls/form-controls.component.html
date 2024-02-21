@@ -1,0 +1,32 @@
+
+<form>
+  <div class="calendar-container">
+    <label class="date-label">Date : 
+      <input type="date">
+    </label>
+  </div>
+
+  <!-- Add a label to display the selected date -->
+  <label id="selectedDateLabel" class="selected-date-label"></label>
+  
+  <div class="table-container">
+    <table class="table table-bordered table-box">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Service ID</th>
+          <th>Manager</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dealer of dealersArray">
+          <td>{{ dealer.Name }}</td>
+          <td>{{ dealer.Service_id }}</td>
+          <td>{{ dealer.Manager }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</form>
+
+

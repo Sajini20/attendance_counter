@@ -1,0 +1,73 @@
+<div class="card border-0 rounded-3 shadow">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-6">
+                <!-- Left Side Content -->
+                <form>
+                    <div class="row">
+                        <div class="col-12">
+                            <label class="date-label long-label">Today's Date :
+                                <input type="text" id="todayDate" name="todayDate" class="form-control" [(ngModel)]="formData.todayDate" placeholder="Today's Date">
+                            </label>
+                            
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <label class="date-label long-label">Service Number :
+                                <input type="text" id="serviceNumber" name="serviceNumber" class="form-control" [(ngModel)]="formData.serviceNumber" placeholder="Service Number">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <label class="btn btn-info checkbox-label" for="sub1">
+                                <input type="checkbox" id="sub1" name="sub1" [(ngModel)]="formData.sub1"> Sub _ 1
+                            </label><br>
+                            <label class="btn btn-info checkbox-label" for="sub2">
+                                <input type="checkbox" id="sub2" name="sub2" [(ngModel)]="formData.sub2"> Sub _ 2
+                            </label><br>
+                            <label class="btn btn-info checkbox-label" for="sub3">
+                                <input type="checkbox" id="sub3" name="sub3" [(ngModel)]="formData.sub3"> Sub _ 3
+                            </label><br>
+                            <label class="btn btn-info checkbox-label" for="sub4">
+                                <input type="checkbox" id="sub4" name="sub4" [(ngModel)]="formData.sub4"> Sub _ 4
+                            </label><br>
+                            <label class="btn btn-info checkbox-label" for="sub5">
+                                <input type="checkbox" id="sub5" name="sub5" [(ngModel)]="formData.sub5"> Sub _ 5
+                            </label><br>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="col-6">
+                <!-- Right Side Content -->
+                <div class="row">
+                    <div class="col-12">
+                        <label class="date-label long-label">Supervisor Name :
+                            <input type="text" id="supervisorDate" name="supervisorDate" class="form-control" [(ngModel)]="formData.supervisorDate" placeholder="Supervisor Name">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="calendar-container">
+                            <label class="date-label long-label">Date : 
+                              <input type="date">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center pt-2">
+            <div class="col-12">
+                <button class="btn btn-sm btn-success custom-button" (click)="submitForm()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+   
